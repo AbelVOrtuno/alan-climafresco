@@ -1,0 +1,35 @@
+// Estilos para el header //
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    background:radial-gradient(ellipse, $primary, $secondary2);
+    &__container{
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 1.2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        max-width: 250px;
+        border-radius: 50%;
+    }
+    &__nav a{
+        color: white;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    &__cta{
+        background-color: $accent;
+        color: white;
+        padding: .8rem 2rem;
+        border-radius: 2rem;
+        font-weight: 600;
+    }
+}
+.header__nav a:hover{
+    color: $secondary-color;
+}
