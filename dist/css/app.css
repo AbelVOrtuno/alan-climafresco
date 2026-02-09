@@ -175,6 +175,120 @@ a {
     gap: 1.5rem;
     grid-template-columns: 1fr; }
 
+/* Mobile first */
+.why__title {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.why-us__content--left,
+.why-us__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.why-us {
+  background-color: #0a3d62;
+  padding: 3rem 1rem; }
+
+.why-us__container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  align-items: center; }
+
+/* Estilos para el texto */
+.why-us__content {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; }
+
+.why-us__content--left h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: orange; }
+
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: white; }
+
+/* Estilos para la lista de servicios */
+.why-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem; }
+
+.why-icon img {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; }
+
+.pdt {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: italic;
+  color: white;
+  padding-top: 1rem; }
+
+.why-us__maps--list li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-align: center; }
+
+.why-us__image img {
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); }
+
+.why-us__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.why-us__maps--list {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+  font-style: normal;
+  list-style: none; }
+
+.why-us__right h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: oblique;
+  color: orange; }
+
+.header__cta2 {
+  background-color: #25d366;
+  border-radius: 2rem;
+  width: 50%;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: white; }
+
+/* Diseño responsive */
+@media (min-width: 1024px) {
+  .why-us__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem; }
+
+  .why-us__list li {
+    text-align: center; } }
 .services__card {
   background: linear-gradient(to right, #0a4da2, #00aaff);
   border-radius: 1.2rem;
