@@ -1,0 +1,83 @@
+.cta{
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, $primary, $primary2);
+    color: white;
+}
+.cta__container{ 
+    max-width: 100%;  
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.cta__content{
+    text-align: center;
+}
+.cta__content h2{
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    color: orange;
+}
+.cta__content p{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.cta__phone a{
+    color: white;
+}
+@media (min-width:768px ){
+    .cta__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .cta__container h2{
+        font-size: 2.5rem;
+    }
+    .cta__container p{
+        font-size: 2rem;
+    }
+}
+/* Estilos para el boton */
+.btn-whatsapp{
+    display:  inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $accent;
+    color: white;
+    padding: 1rem;
+    border-radius: 5rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(34, 197, 94, .4);
+    transition: all .3s ease;
+}
+.btn-whatsapp:hover{
+    background: #16a34a;
+    transform: scale(1.05);
+}
+.cta__phone{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 100;
+}
+.cta__image img{
+    border-radius: 2rem;
+    box-shadow: 0, 1px, 5px rgba(0,0,0, 0.09);
+}
+@media (min-width:768px){
+    .cta__phone a{
+        font-size: 2rem;
+        color: white;
+    }
+}
+
