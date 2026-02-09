@@ -1,0 +1,18 @@
+// estilos logicos base //
+@import 'sass/base/reset';
+@import 'sass/base/variables';
+@import 'sass/base/globales';
+@import 'sass/base/mixins';
+
+// Diseño final del proyecto //
+@import 'sass/layout/header';
+@import 'sass/layout/hero';
+@import 'sass/layout/services';
+@import 'sass/layout/beneficios';
+@import 'sass/layout/contact';
+@import 'sass/layout/testimonios';
+@import 'sass/layout/footer' ;
+
+// Componentes del proyecto //
+@import 'sass/components/cards';
+@import 'sass/components/buttons';
