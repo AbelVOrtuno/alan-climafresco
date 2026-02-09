@@ -289,6 +289,81 @@ a {
 
   .why-us__list li {
     text-align: center; } }
+.cta {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #0a3d62, #0a4da2);
+  color: white; }
+
+.cta__container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 2rem; }
+
+.cta__content {
+  text-align: center; }
+
+.cta__content h2 {
+  font-size: 1.5rem;
+  font-style: oblique;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  color: orange; }
+
+.cta__content p {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 2rem; }
+
+.cta__phone a {
+  color: white; }
+
+@media (min-width: 768px) {
+  .cta__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center; }
+
+  .cta__container h2 {
+    font-size: 2.5rem; }
+
+  .cta__container p {
+    font-size: 2rem; } }
+/* Estilos para el boton */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: white;
+  padding: 1rem;
+  border-radius: 5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+  transition: all .3s ease; }
+
+.btn-whatsapp:hover {
+  background: #16a34a;
+  transform: scale(1.05); }
+
+.cta__phone {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 100; }
+
+.cta__image img {
+  border-radius: 2rem;
+  box-shadow: 0, 1px, 5px rgba(0, 0, 0, 0.09); }
+
+@media (min-width: 768px) {
+  .cta__phone a {
+    font-size: 2rem;
+    color: white; } }
 .testimonials {
   padding: 4rem 1rem;
   background: linear-gradient(to right, #0a4da2, #00aaff); }
@@ -318,9 +393,7 @@ a {
   padding: 2rem;
   border-radius: 1.6rem;
   text-align: center;
-  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08);
-  position: absolute;
-  opacity: 0; }
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.08); }
 
 .testimonials__card:hover {
   transform: translateY(-6px); }
@@ -358,6 +431,82 @@ a {
   .testimonials__card {
     position: relative;
     opacity: 1; } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.footer {
+  background-color: black;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  .footer__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem; }
+  @media (max-width: 768px) {
+    .footer .footer__container {
+      text-align: center; }
+    .footer .footer__logo {
+      margin: 0 auto; }
+    .footer .footer__brand, .footer .footer__services, .footer .footer__contact {
+      align-items: center; }
+    .footer .footer__contact {
+      text-align: center; }
+    .footer .footer__whatsapp {
+      align-self: center; } }
+  .footer__logo {
+    max-width: 250px;
+    margin-bottom: 2rem;
+    border-radius: 50%; }
+  .footer__description {
+    font-size: 1.5rem;
+    line-height: 1.6; }
+  .footer__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: orange; }
+  .footer__list {
+    list-style: none; }
+    .footer__list li {
+      font-size: 1rem;
+      margin-bottom: .6rem; }
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem; }
+  .footer__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; }
+    .footer__link:hover {
+      text-decoration: underline; }
+  .footer__whatsapp {
+    margin-top: 1rem;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .9rem 1.8rem;
+    background-color: #25d366;
+    color: white;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    text-decoration: none; }
+  .footer__bottom {
+    width: 100%;
+    text-align: center;
+    padding: 1.3rem;
+    font-size: 1rem;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: orange;
+    background: radial-gradient(black, #333); }
+
 .services__card {
   background: linear-gradient(to right, #0a4da2, #00aaff);
   border-radius: 1.2rem;
