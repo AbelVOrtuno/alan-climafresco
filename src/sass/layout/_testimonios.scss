@@ -17,10 +17,12 @@
 }
 /* Diseño de las tarjetas */
 .testimonials__grid{
-    position: relative;
+    
     min-height: 320px;
     display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
+    justify-items: center;
 }
 .testimonials__card{
     background-color: #f9fafb;
@@ -28,9 +30,9 @@
     border-radius: 1.6rem;
     text-align: center;
     box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, .08);
-    position: absolute;
-    
-    opacity: 0;
+    position: relative;
+    width: 100%;
+    max-width: 380px; // 👈 ancho visual premium en móvil
 }
 .testimonials__card:hover{
     transform: translateY(-6px);
@@ -62,6 +64,7 @@
 @media (min-width: 1024px){
     .testimonials__grid{
         grid-template-columns: repeat(3, 1fr);
+        justify-items: stretch;
         gap: 2rem;
         position: static;
         min-height: auto;
